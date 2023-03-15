@@ -5,6 +5,6 @@ dev/
 *.log
 dist/stats.html
 dist/profile.json
-dist/bilibili-evolved.dev.user.js
+# dist/bilibili-evolved.dev.user.js
 registry/dist/doc.js
 dev-tools/**/dist/

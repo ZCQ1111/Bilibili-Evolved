@@ -265,6 +265,14 @@
   },
   {
     "type": "component",
+    "name": "rankingLsitHome",
+    "displayName": "排行榜首页",
+    "description": "使用重新设计的排行榜风格首页替换原本的首页.\r\n\r\n请注意, 此功能与 `极简首页` 互斥, 请勿同时使用.\r\n\r\n- 个性化推荐: 启用时展示推荐视频, 禁用时展示热门视频\r\n- 启用横向滚动: 在可以横向滚动的列表中, 使鼠标滚轮可以做出横向滚动的效果, 请注意这会禁用卡片的边缘吸附效果.\r\n",
+    "fullRelativePath": "../../registry/dist/components/style/home-redesign/rankingLsit.js",
+    "fullAbsolutePath": "registry/dist/components/style/home-redesign/rankingLsit.js"
+  },
+  {
+    "type": "component",
     "name": "playerOnTop",
     "displayName": "播放器置顶",
     "description": "在视频页面中将播放器放在页面最上方.",
