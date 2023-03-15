@@ -1,6 +1,6 @@
-import { FreshLayoutItem } from '../ranking-list-layout-item'
+import { RankingListLayoutItem } from '../ranking-list-layout-item'
 
-export const trending: FreshLayoutItem = {
+export const trending: RankingListLayoutItem = {
   name: 'trending',
   displayName: '热门视频',
   grow: true,

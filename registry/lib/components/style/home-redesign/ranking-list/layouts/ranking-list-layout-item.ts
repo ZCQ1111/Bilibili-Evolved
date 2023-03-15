@@ -1,10 +1,10 @@
 import { Executable, VueModule, WithName } from '@/core/common-types'
 
-export interface FreshLayoutItem extends WithName {
+export interface RankingListLayoutItem extends WithName {
   component: Executable<VueModule>
   grow?: boolean
 }
-export interface FreshLayoutItemSettings {
+export interface RankingListLayoutItemSettings {
   name: string
   linebreak: boolean
 }

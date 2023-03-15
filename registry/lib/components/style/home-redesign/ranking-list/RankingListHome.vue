@@ -2,20 +2,20 @@
   <HomeRedesignBase>
     <div class="fresh-home">
       <div class="fresh-home-content-layout">
-        <FreshLayoutItem v-for="layout of layouts" :key="layout.name" :item="layout" />
+        <RankingListLayoutItem v-for="layout of layouts" :key="layout.name" :item="layout" />
       </div>
     </div>
   </HomeRedesignBase>
 </template>
 <script lang="ts">
 import HomeRedesignBase from '../HomeRedesignBase.vue'
-import FreshLayoutItem from './RankingListLayoutItem.vue'
+import RankingListLayoutItem from './RankingListLayoutItem.vue'
 import { layouts } from './layouts/layouts'
 
 export default Vue.extend({
   components: {
     HomeRedesignBase,
-    FreshLayoutItem,
+    RankingListLayoutItem,
   },
   data() {
     return {

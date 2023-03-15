@@ -4,4 +4,4 @@ import { feeds } from './feeds/feeds'
 import { trending } from './trending/trending'
 
 const builtInLayouts = [trending, feeds, categories]
-export const [layouts] = registerAndGetData('homeRedesign.fresh.layouts', [...builtInLayouts])
+export const [layouts] = registerAndGetData('homeRedesign.rankinglist.layouts', [...builtInLayouts])

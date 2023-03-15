@@ -2795,7 +2795,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"compilationInfo\": () => (/* binding */ compilationInfo)\n/* harmony export */ });\n/* harmony import */ var _runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./runtime */ \"./webpack/compilation-info/runtime.ts\");\n\nconst compilationInfo = { ..._runtime__WEBPACK_IMPORTED_MODULE_0__.runtimeInfo,\n  ...{\"commitHash\":\"5a5b47bc426e1104dd6e17531ed601a5d054163b\",\"branch\":\"rankinglist-homepage\",\"nearestTag\":\"v2.5.2-preview\",\"versionWithTag\":\"v2.5.2-preview-6-g5a5b47bc4\"}\n};\n\n//# sourceURL=webpack://@bevo/core/./webpack/compilation-info/index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"compilationInfo\": () => (/* binding */ compilationInfo)\n/* harmony export */ });\n/* harmony import */ var _runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./runtime */ \"./webpack/compilation-info/runtime.ts\");\n\nconst compilationInfo = { ..._runtime__WEBPACK_IMPORTED_MODULE_0__.runtimeInfo,\n  ...{\"commitHash\":\"664de9404fb4f3c092896f4a7964d8ae629c9c89\",\"branch\":\"rankinglist-homepage\",\"nearestTag\":\"v2.5.2-preview\",\"versionWithTag\":\"v2.5.2-preview-7-g664de9404\"}\n};\n\n//# sourceURL=webpack://@bevo/core/./webpack/compilation-info/index.ts?");
 
 /***/ }),
 

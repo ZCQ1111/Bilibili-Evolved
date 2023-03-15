@@ -1,6 +1,6 @@
-import { FreshLayoutItem } from '../ranking-list-layout-item'
+import { RankingListLayoutItem } from '../ranking-list-layout-item'
 
-export const categories: FreshLayoutItem = {
+export const categories: RankingListLayoutItem = {
   name: 'categories',
   displayName: '分区',
   grow: true,
