@@ -5,7 +5,7 @@ import { playerUrls } from '@/core/utils/urls'
 
 const entry = async () => {
   let lastAid: string
-  const removeCover = () => document.body.style.removeProperty('--cover-url')
+  const removeCover = () => document.documentElement.style.removeProperty('--cover-url')
   const videoPrototype = (await isBwpVideo()) ? BwpElement.prototype : HTMLVideoElement.prototype
   // bpx player 改了 video.play(), hook 直接挂 HTMLVideoElement.prototype 上没效果 (#3698)
   const bpxPlayer = dq('.bpx-player-video-wrap')
@@ -40,7 +40,7 @@ const entry = async () => {
     const { VideoInfo } = await import('@/components/video/video-info')
     const info = new VideoInfo(aid)
     await info.fetchInfo()
-    document.body.style.setProperty('--cover-url', `url('${info.coverUrl}')`)
+    document.documentElement.style.setProperty('--cover-url', `url('${info.coverUrl}')`)
   }
   videoChange(showCover)
 }

@@ -253,7 +253,7 @@ export default Vue.extend({
         this.page++
         const cards = await this.getCards()
         this.cards.push(...cards)
-        this.hasMorePage = cards.length === 0 || this.cards.length < this.folder.count
+        this.hasMorePage = cards.length !== 0 || this.cards.length < this.folder.count
       } catch (error) {
         logError(error)
       }
@@ -409,7 +409,7 @@ export default Vue.extend({
         .title {
           grid-area: title;
           font-size: 13px;
-          font-weight: bold;
+          @include semi-bold();
           @include max-line(2);
           -webkit-box-align: start;
           margin: 0;

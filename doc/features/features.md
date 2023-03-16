@@ -559,6 +559,15 @@ by [@snowraincloud](https://github.com/snowraincloud)
 
 开启后, 可在每条评论的菜单中选择复制链接.
 
+### [禁用评论区搜索词](../../registry/dist/components/utils/comments/disable-search-link.js)
+`disableCommentsSearchLink`
+
+**jsDelivr:** [`Stable`](https://fastly.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/utils/comments/disable-search-link.js) / [`Preview`](https://fastly.jsdelivr.net/gh/the1812/Bilibili-Evolved@preview/registry/dist/components/utils/comments/disable-search-link.js)
+
+**GitHub:** [`Stable`](https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/utils/comments/disable-search-link.js) / [`Preview`](https://raw.githubusercontent.com/the1812/Bilibili-Evolved/preview/registry/dist/components/utils/comments/disable-search-link.js)
+
+禁用评论区的搜索词链接.
+
 ### [DevClient](../../registry/dist/components/utils/dev-client.js)
 
 `devClient`
@@ -626,6 +635,17 @@ by [@snowraincloud](https://github.com/snowraincloud)
 **GitHub:** [`Stable`](https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/utils/image-resolution.js) / [`Preview`](https://raw.githubusercontent.com/the1812/Bilibili-Evolved/preview/registry/dist/components/utils/image-resolution.js)
 
 根据屏幕 DPI 请求更高分辨率的图片, 例如 DPI 缩放 200% 则请求 2 倍的分辨率, 加载时间也会相应变长一些. (也会导致某些浏览器里出现图片闪动, 因为本质上是更换了图片源)
+
+### [批量导入合集](../../registry/dist/components/utils/import-series.js)
+`importSeries`
+
+**jsDelivr:** [`Stable`](https://fastly.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/utils/import-series.js) / [`Preview`](https://fastly.jsdelivr.net/gh/the1812/Bilibili-Evolved@preview/registry/dist/components/utils/import-series.js)
+
+**GitHub:** [`Stable`](https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/utils/import-series.js) / [`Preview`](https://raw.githubusercontent.com/the1812/Bilibili-Evolved/preview/registry/dist/components/utils/import-series.js)
+
+by [@aiden](https://github.com/swhoro)
+
+在合集页面制作一个批量导入按钮，可以新增所有合集内视频至同名收藏夹
 
 ### [快捷键扩展](../../registry/dist/components/utils/keymap.js)
 
@@ -750,7 +770,7 @@ by [@kdxcxs](https://github.com/kdxcxs)
 
 **GitHub:** [`Stable`](https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/danmaku/expand.js) / [`Preview`](https://raw.githubusercontent.com/the1812/Bilibili-Evolved/preview/registry/dist/components/video/danmaku/expand.js)
 
-每次加载视频时自动展开弹幕列表, 如果弹幕装载量超过 `最大弹幕数量`, 则不展开以免对页面造成卡顿.
+每次加载视频时自动展开弹幕列表, 如果弹幕装载量超过 `最大弹幕数量`, 则不展开以免对页面造成卡顿. (`最大弹幕数量` 是和视频的总弹幕量对比, 不一定和播放器实际装载的弹幕量相等)
 
 ### [视频页默认定位](../../registry/dist/components/video/default-location.js)
 
@@ -893,6 +913,10 @@ by [@JLoeve](https://github.com/LonelySteve)
 ### 🔧 **选项**
 
 - `隐藏滚动条`：如果添加的倍速过多，倍速菜单将出现滚动条，在 Windows 下，若没有安装并启用「细滚动条」组件会显得比较挤，建议开启此选项隐藏滚动条.
+
+- `隐藏移除图标`：如果认为倍速右侧的移除倍速图标有些突兀，可以开启此选项隐藏.
+
+- `隐藏新增图标`：如果认为顶部的新增倍速图标有些突兀，可以开启此选项隐藏.
 
 ### **新增倍速**
 
@@ -1160,6 +1184,15 @@ by FoundTheWOUT
 
 在快捷键的动作列表里添加一个 "开关弹幕列表".
 
+### [快捷键扩展 - 开关 CC 字幕](../../registry/dist/plugins/utils/keymap-toggle-subtitle.js)
+`keymap.actions.toggleSubtitle`
+
+**jsDelivr:** [`Stable`](https://fastly.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/plugins/utils/keymap-toggle-subtitle.js) / [`Preview`](https://fastly.jsdelivr.net/gh/the1812/Bilibili-Evolved@preview/registry/dist/plugins/utils/keymap-toggle-subtitle.js)
+
+**GitHub:** [`Stable`](https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/plugins/utils/keymap-toggle-subtitle.js) / [`Preview`](https://raw.githubusercontent.com/the1812/Bilibili-Evolved/preview/registry/dist/plugins/utils/keymap-toggle-subtitle.js)
+
+在快捷键的动作列表里添加一个 "开关 CC 字幕".
+
 ### [加载提示 - 灵梦油库里](../../registry/dist/plugins/v-loading/reimu.js)
 
 `vLoading.reimu`
@@ -1199,6 +1232,15 @@ by FoundTheWOUT
 **GitHub:** [`Stable`](https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/plugins/video/download/manual-input.js) / [`Preview`](https://raw.githubusercontent.com/the1812/Bilibili-Evolved/preview/registry/dist/plugins/video/download/manual-input.js)
 
 为下载视频增加手动输入支持.
+
+### [下载视频 - Motrix 输出支持](../../registry/dist/plugins/video/download/motrix-output.js)
+`downloadVideo.outputs.motrix`
+
+**jsDelivr:** [`Stable`](https://fastly.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/plugins/video/download/motrix-output.js) / [`Preview`](https://fastly.jsdelivr.net/gh/the1812/Bilibili-Evolved@preview/registry/dist/plugins/video/download/motrix-output.js)
+
+**GitHub:** [`Stable`](https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/plugins/video/download/motrix-output.js) / [`Preview`](https://raw.githubusercontent.com/the1812/Bilibili-Evolved/preview/registry/dist/plugins/video/download/motrix-output.js)
+
+为下载视频增加 Motrix 输出支持.
 
 ### [下载视频 - MPV 播放支持（列表）](../../registry/dist/plugins/video/download/mpv-output-playlist.js)
 

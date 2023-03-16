@@ -158,13 +158,6 @@ export default Vue.extend({
     async remove(aid: number, index: number) {
       this.cards.splice(index, 1)
       await this.toggleWatchlater(aid)
-      this.lastRemovedAid = aid
-    },
-    async undo() {
-      const aid = this.lastRemovedAid
-      if (aid !== 0) {
-        await this.toggleWatchlater(aid)
-      }
     },
     updateFilteredCards: lodash.debounce(function updateFilteredCards() {
       const search = this.search.toLowerCase()
@@ -326,7 +319,7 @@ export default Vue.extend({
       .title {
         grid-area: title;
         font-size: 13px;
-        font-weight: bold;
+        @include semi-bold();
         margin: 0;
         margin-top: 8px;
         padding: 0 10px;
@@ -371,17 +364,6 @@ export default Vue.extend({
           color: var(--theme-color);
         }
       }
-    }
-  }
-  .undo {
-    position: absolute;
-    bottom: 16px;
-    left: 50%;
-    opacity: 0;
-    transform: translateX(-50%) translateY(8px);
-    &.show {
-      opacity: 1;
-      transform: translateX(-50%) translateY(0px);
     }
   }
 }
