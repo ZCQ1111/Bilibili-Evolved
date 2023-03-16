@@ -48,8 +48,8 @@
     </div>
     <div class="fresh-home-feeds-content">
       <VideoList ref="videoList" :videos="videos" :loading="loading" />
-    </div>    
-  </div>  
+    </div>
+  </div>
 </template>
 <script lang="ts">
 import { getVideoFeeds } from '@/components/feeds/api'

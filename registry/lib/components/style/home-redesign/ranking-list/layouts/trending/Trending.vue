@@ -41,7 +41,7 @@ export default Vue.extend({
   },
   computed: {
     title() {
-      if (rankingListHomeOptions.personalized) {        
+      if (rankingListHomeOptions.personalized) {
         return '推荐'
       }
       return '热门'
@@ -54,6 +54,7 @@ export default Vue.extend({
     async reload() {
       this.loading = true
       this.videos = []
+      console.log(123, rankingListHomeOptions.personalized)
       this.videos = await getTrendingVideos(rankingListHomeOptions.personalized).finally(() => {
         this.loading = false
       })

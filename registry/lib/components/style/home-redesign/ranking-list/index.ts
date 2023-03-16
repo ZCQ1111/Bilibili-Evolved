@@ -5,7 +5,7 @@ import { getNumberValidator, mountVueComponent } from '@/core/utils'
 import { homeUrls } from '../urls'
 
 export const component = defineComponentMetadata({
-  name: 'rankingLsitHome',
+  name: 'rankingListHome',
   displayName: '排行榜首页',
   urlInclude: homeUrls,
   tags: [componentsTags.style],
@@ -49,7 +49,7 @@ export const component = defineComponentMetadata({
     },
     maxWidth: {
       displayName: '最大宽度 (px)',
-      defaultValue: 1440,
+      defaultValue: 1640,
       validator: getNumberValidator(1000, 3000),
     },
   },

@@ -6,7 +6,7 @@
         :href="rankingsLink"
         target="_blank"
       >
-        <SubHeader> {{region.name}} </SubHeader>
+        <SubHeader> {{ region.name }} </SubHeader>
       </a>
       <RankList bangumi-mode :parse-json="parseJson" :api="rankingsApi" />
     </div>

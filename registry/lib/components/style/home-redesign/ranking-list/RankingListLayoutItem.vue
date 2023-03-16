@@ -38,7 +38,7 @@ export default Vue.extend({
       flex: 1 0 100%;
     }
     &.grow {
-      flex: 1 0 100%;
+      flex: 1 0 0;
     }
   }
 }

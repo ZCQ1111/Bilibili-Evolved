@@ -42,11 +42,15 @@
         </a>
         <div class="fresh-home-rank-list-laser" data-number="1"></div>
       </div>
-      <template v-for="(r, i) in excludeFirst">        
+      <template v-for="(r, i) in excludeFirst">
         <div
           v-if="i % 2 == 0"
+          :key="r.aid"
           class="fresh-home-rank-list-second-item animation"
-          v-bind:style="{ top: (i + 2) * 150 + 'px', bottom: (i==8 ? (12 - i * 150 + 100) : (12 - i * 150)) + 'px' }"
+          :style="{
+            top: (i + 2) * 150 + 'px',
+            bottom: (i == 8 ? 12 - i * 150 + 100 : 12 - i * 150) + 'px',
+          }"
         >
           <a class="fresh-home-rank-list-rank-item" target="_blank" :href="r.videoHref">
             <div class="fresh-home-rank-list-rank-item-title" :title="r.title">
@@ -72,16 +76,17 @@
           </a>
           <div class="fresh-home-rank-list-laser" :data-number="i + 2"></div>
           <div v-if="i == 8">
-          <VButton class="fresh-home-rank-list-backtotop-button" round @click="backtotop">
-            <VIcon icon="mdi-arrow-up-bold-circle" />
-            回到顶端
-          </VButton>
-        </div>
+            <VButton class="fresh-home-rank-list-backtotop-button" round @click="backtotop">
+              <VIcon icon="mdi-arrow-up-bold-circle" />
+              回到顶端
+            </VButton>
+          </div>
         </div>
         <div
           v-else
+          :key="r.aid"
           class="fresh-home-rank-list-third-item animation"
-          v-bind:style="{ top: (i + 2) * 150 + 'px', bottom: 12 - i * 150 + 'px' }"
+          :style="{ top: (i + 2) * 150 + 'px', bottom: 12 - i * 150 + 'px' }"
         >
           <a class="fresh-home-rank-list-rank-item" target="_blank" :href="r.videoHref">
             <div class="fresh-home-rank-list-rank-item-title" :title="r.title">
@@ -106,7 +111,7 @@
             />
           </a>
           <div class="fresh-home-rank-list-laser" :data-number="i + 2"></div>
-        </div>        
+        </div>
       </template>
     </template>
   </div>
@@ -172,13 +177,13 @@ export default Vue.extend({
   },
   methods: {
     backtotop() {
-        try {
-          window.scrollTo(0,0);
-        } catch (error) {
-          console.error(error)          
-        } 
-      },
+      try {
+        window.scrollTo(0, 0)
+      } catch (error) {
+        console.error(error)
+      }
     },
+  },
 })
 </script>
 <style lang="scss">

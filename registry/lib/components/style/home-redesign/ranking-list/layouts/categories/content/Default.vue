@@ -2,7 +2,7 @@
   <div class="fresh-home-categories-default">
     <div class="fresh-home-categories-default-rank-list">
       <a :href="rankingsLink" target="_blank">
-        <SubHeader> {{region.name}} </SubHeader>
+        <SubHeader> {{ region.name }} </SubHeader>
       </a>
       <RankList :parse-json="parseJson" :api="rankingsApi" />
     </div>
